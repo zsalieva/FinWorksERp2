@@ -1,5 +1,7 @@
 package com.cybertek.pages.login_navigation;
 
+import com.cybertek.utilities.BasePage;
+import com.cybertek.utilities.BrowserUtils;
 import com.cybertek.utilities.ConfigurationReader;
 import com.cybertek.utilities.Driver;
 import org.apache.logging.log4j.LogManager;
@@ -9,9 +11,11 @@ import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginPage {
-    public LoginPage(){PageFactory.initElements(Driver.getDriver(), this);}
-    private static final Logger logger = LogManager.getLogger();
+public class LoginPage extends BasePage {
+    public LoginPage() {
+        PageFactory.initElements(Driver.getDriver(), this);
+    }
+
     @FindBy(name = "USER_LOGIN")
     @CacheLookup
     public WebElement userNameElement;
@@ -20,17 +24,19 @@ public class LoginPage {
     @CacheLookup
     public WebElement passwordElement;
 
-    @FindBy(xpath="//input[@type=\"submit\"]")
+    @FindBy(xpath = "//input[@type='submit']")
     public WebElement loginButtonElement;
 
 
-    public void login(String username, String password){
+    public void login(String username, String password) {
+        BrowserUtils.waitForStaleElement(userNameElement);
         userNameElement.sendKeys(username);
         passwordElement.sendKeys(password);
+        BrowserUtils.waitForClickablility(loginButtonElement, 5);
         loginButtonElement.click();
     }
 
-    public void login(){
+    public void login() {
         String username = ConfigurationReader.getProperty("helpdeskusername");
         String password = ConfigurationReader.getProperty("helpdeskpassword");
         userNameElement.sendKeys(username);
@@ -38,9 +44,10 @@ public class LoginPage {
         loginButtonElement.click();
     }
 
-    public void goToLandingPage(){
+    public void goToLandingPage() {
         Driver.getDriver().get(ConfigurationReader.getProperty("url"));
     }
+
     public void login(String role) {
         String username = "";
         String password = "";

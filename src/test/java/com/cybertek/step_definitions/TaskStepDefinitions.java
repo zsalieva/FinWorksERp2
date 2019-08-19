@@ -17,7 +17,8 @@ public class TaskStepDefinitions {
 
     @Then("user clicks on task button")
     public void user_clicks_on_task_button() {
-        pages.tasksPage().clickTask();
+        pages.tasksPage().clickTasks();
+        pages.tasksPage().clickToAddNewTask();
         pages.tasksPage().setThingsToDo("to do list");
         pages.tasksPage().clickSubmit();
     }
