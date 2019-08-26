@@ -17,19 +17,10 @@ public class NavigationPage  {
     public NavigationPage(){
         PageFactory.initElements(Driver.getDriver(), this);}
 
-    @FindBy(xpath = "//span[contains(text(),\"Drive\")]")
-    @CacheLookup
-    public WebElement driverModule;
-
-
-    @FindBy(xpath = "//span[contains(text(),\"Company\")]")
-    @CacheLookup
-    public WebElement companyModule;
-
 
 
    public void navigateTo(String module){
-     BrowserUtils.waitPlease(5);
+     BrowserUtils.waitPlease(3);
      String m ="//span[contains(text(),'" + module + "')]";
      Driver.driver.findElement(By.xpath(m)).click();
     // String tActual = Driver.driver.getTitle();
