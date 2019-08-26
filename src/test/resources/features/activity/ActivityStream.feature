@@ -8,7 +8,7 @@
         | username | <username> |
         | password | <password> |
 
-      Then user clicks on task button
+      When user clicks on task button
 
       Examples:
       | username                       | password |
