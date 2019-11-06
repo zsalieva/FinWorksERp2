@@ -9,16 +9,18 @@ import org.junit.runner.RunWith;
                 "json:target/cucumber.json",
                 "html:target/default-cucumber-reports"
         },
-          tags = {"@navigation"},
+          tags = {"@about"},
         features = {"src/test/resources/features" //to specify where are the features
         },
         //feature contains scenarios
         //every scenario is like a test
         //where is the implementation for features
-        glue = {"com/cybertek/step_definitions"},
+        glue = {"src/test/java/com/cybertek/step_definitions"},
         //dry run - to generate step definitions automatically
         //you will see them in the console output
         dryRun = false
+
 )
 public class CukesRunner {
+
 }

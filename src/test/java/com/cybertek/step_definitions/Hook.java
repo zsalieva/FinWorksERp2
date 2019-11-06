@@ -19,7 +19,7 @@ public class Hook {
         System.out.println("BEFORE");
         Driver.getDriver().manage().window().maximize();
         Driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        Driver.getDriver().get(ConfigurationReader.getProperty("url"));
+       // Driver.getDriver().get(ConfigurationReader.getProperty("url"));
 
     }
 

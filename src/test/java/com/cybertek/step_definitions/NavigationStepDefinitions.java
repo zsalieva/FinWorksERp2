@@ -2,41 +2,39 @@ package com.cybertek.step_definitions;
 
 import com.cybertek.pages.Navigation.NavigationPage;
 import com.cybertek.utilities.BrowserUtils;
+import com.cybertek.utilities.ConfigurationReader;
 import com.cybertek.utilities.Driver;
-import com.cybertek.utilities.Pages;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.junit.Assert;
-import org.openqa.selenium.WebElement;
-
-import java.sql.SQLOutput;
-import java.util.Map;
 
 public class NavigationStepDefinitions {
-    Pages pages = new Pages();
-    @Given("I log in as a {string}")
-    public void i_log_in_as_a(String role) {
-        pages.loginPage().login(role);
-        System.out.println("As a " + role);
+
+
+    @Given("user is on the landing page")
+    public void user_is_on_the_landing_page() {
+
+        Driver.getDriver().get(ConfigurationReader.getProperty("url"));
     }
 
 
-
-
-    @When("I click a {string}")
-    public void i_click_a(String module) {
-     pages.navigationPage().navigateTo(module);
-       System.out.println("navigate to " + module);
-
-
-
-    }
-
-    @Then("the title should be {string}")
-    public void the_title_should_be(String string) {
+    @When("user clicks on {string}")
+    public void user_clicks_on(String string) {
+        NavigationPage.navigato(string);
         BrowserUtils.waitPlease(3);
-        String actual = Driver.driver.getTitle();
-        Assert.assertEquals(string,actual);
     }
+
+    @Then("the {string} should be displayed")
+    public void the_should_be_displayed(String string) {
+
+         String actual = Driver.driver.getTitle();
+         Assert.assertTrue(actual.contains(string));
+       // Assert.assertEquals(string,actual);
+        BrowserUtils.waitPlease(3);
+    }
+
+
+
+
 }

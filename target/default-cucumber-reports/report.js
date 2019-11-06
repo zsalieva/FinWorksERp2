@@ -1,193 +1,119 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/features/navigation/Navigation.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/features/about/AboutUsDpDn.feature");
 formatter.feature({
-  "name": "navigate module options",
+  "name": "Drop Down module options",
   "description": "",
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@navigation"
+      "name": "@about"
     }
   ]
 });
 formatter.scenarioOutline({
-  "name": "Verify module title",
+  "name": "Viewing AboutUs Module",
   "description": "",
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "name": "I log in as a \"\u003cuser\u003e\"",
+  "name": "user is on the landing page",
   "keyword": "Given "
 });
 formatter.step({
-  "name": "I click a \"\u003cmodule\u003e\"",
+  "name": "user clicks on AboutUs",
   "keyword": "When "
 });
 formatter.step({
-  "name": "the title should be \"\u003ctitle\u003e\"",
+  "name": "user should able to see \"\u003cMenu\u003e\"",
   "keyword": "Then "
 });
 formatter.examples({
-  "name": "hr",
+  "name": "",
   "description": "",
   "keyword": "Examples",
   "rows": [
     {
       "cells": [
-        "user",
-        "module",
-        "title"
+        "Menu"
       ]
     },
     {
       "cells": [
-        "hr",
-        "Company",
-        "Company"
+        "What is ERP?"
+      ]
+    },
+    {
+      "cells": [
+        "Mission and Vision"
       ]
     }
   ]
 });
-formatter.background({
-  "name": "",
+formatter.scenario({
+  "name": "Viewing AboutUs Module",
   "description": "",
-  "keyword": "Background"
-});
-formatter.before({
-  "status": "passed"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@about"
+    }
+  ]
 });
 formatter.step({
   "name": "user is on the landing page",
   "keyword": "Given "
 });
-formatter.match({
-  "location": "LoginStepDefinitions.user_is_on_the_landing_page()"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
+});
+formatter.step({
+  "name": "user clicks on AboutUs",
+  "keyword": "When "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "user should able to see \"What is ERP?\"",
+  "keyword": "Then "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
 });
 formatter.scenario({
-  "name": "Verify module title",
+  "name": "Viewing AboutUs Module",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@navigation"
+      "name": "@about"
     }
   ]
-});
-formatter.step({
-  "name": "I log in as a \"hr\"",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "NavigationStepDefinitions.i_log_in_as_a(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I click a \"Company\"",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "NavigationStepDefinitions.i_click_a(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "the title should be \"Company\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "NavigationStepDefinitions.the_title_should_be(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.examples({
-  "name": "marketing",
-  "description": "",
-  "keyword": "Examples",
-  "rows": [
-    {
-      "cells": [
-        "user",
-        "module",
-        "title"
-      ]
-    },
-    {
-      "cells": [
-        "marketing",
-        "Company",
-        "Company"
-      ]
-    }
-  ]
-});
-formatter.background({
-  "name": "",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.before({
-  "status": "passed"
 });
 formatter.step({
   "name": "user is on the landing page",
   "keyword": "Given "
 });
-formatter.match({
-  "location": "LoginStepDefinitions.user_is_on_the_landing_page()"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Verify module title",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@navigation"
-    }
-  ]
+  "status": "undefined"
 });
 formatter.step({
-  "name": "I log in as a \"marketing\"",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "NavigationStepDefinitions.i_log_in_as_a(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I click a \"Company\"",
+  "name": "user clicks on AboutUs",
   "keyword": "When "
 });
-formatter.match({
-  "location": "NavigationStepDefinitions.i_click_a(String)"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.step({
-  "name": "the title should be \"Company\"",
+  "name": "user should able to see \"Mission and Vision\"",
   "keyword": "Then "
 });
-formatter.match({
-  "location": "NavigationStepDefinitions.the_title_should_be(String)"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
+  "status": "undefined"
 });
 });

@@ -1,4 +1,4 @@
-
+--strict
 @about
 Feature: Drop Down module options
 

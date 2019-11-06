@@ -6,7 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="FinworkERP2" />
         <module name="Btrix24OnlineAutomation" />
+        <module name="OnlineSpring2019Cucumber" />
       </profile>
     </annotationProcessing>
   </component>

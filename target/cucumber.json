@@ -3,238 +3,98 @@
     "line": 2,
     "elements": [
       {
-        "line": 3,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 1128531309,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "user is on the landing page",
-            "match": {
-              "location": "LoginStepDefinitions.user_is_on_the_landing_page()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 5787081748,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hook.setup(Scenario)"
-            }
-          }
-        ],
         "line": 14,
-        "name": "Verify module title",
+        "name": "Viewing AboutUs Module",
         "description": "",
-        "id": "navigate-module-options;verify-module-title;hr;2",
-        "after": [
-          {
-            "result": {
-              "duration": 191991254,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hook.teardown(Scenario)"
-            }
-          }
-        ],
+        "id": "drop-down-module-options;viewing-aboutus-module;;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 6719514081,
-              "status": "passed"
+              "status": "undefined"
             },
-            "line": 7,
-            "name": "I log in as a \"hr\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"hr\"",
-                  "offset": 14
-                }
-              ],
-              "location": "NavigationStepDefinitions.i_log_in_as_a(String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 4718101002,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "I click a \"Company\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Company\"",
-                  "offset": 10
-                }
-              ],
-              "location": "NavigationStepDefinitions.i_click_a(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 3017540340,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "the title should be \"Company\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Company\"",
-                  "offset": 20
-                }
-              ],
-              "location": "NavigationStepDefinitions.the_title_should_be(String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@navigation"
-          }
-        ]
-      },
-      {
-        "line": 3,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 142529794,
-              "status": "passed"
-            },
-            "line": 4,
+            "line": 5,
             "name": "user is on the landing page",
-            "match": {
-              "location": "LoginStepDefinitions.user_is_on_the_landing_page()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 3824128707,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hook.setup(Scenario)"
-            }
-          }
-        ],
-        "line": 23,
-        "name": "Verify module title",
-        "description": "",
-        "id": "navigate-module-options;verify-module-title;marketing;2",
-        "after": [
-          {
-            "result": {
-              "duration": 191040884,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hook.teardown(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 3265608194,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "I log in as a \"marketing\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"marketing\"",
-                  "offset": 14
-                }
-              ],
-              "location": "NavigationStepDefinitions.i_log_in_as_a(String)"
-            },
+            "match": {},
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 3864212047,
-              "status": "passed"
+              "status": "undefined"
             },
-            "line": 8,
-            "name": "I click a \"Company\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Company\"",
-                  "offset": 10
-                }
-              ],
-              "location": "NavigationStepDefinitions.i_click_a(String)"
-            },
+            "line": 6,
+            "name": "user clicks on AboutUs",
+            "match": {},
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 3007295177,
-              "status": "passed"
+              "status": "undefined"
             },
-            "line": 9,
-            "name": "the title should be \"Company\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Company\"",
-                  "offset": 20
-                }
-              ],
-              "location": "NavigationStepDefinitions.the_title_should_be(String)"
-            },
+            "line": 7,
+            "name": "user should able to see \"What is ERP?\"",
+            "match": {},
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@navigation"
+            "name": "@about"
+          }
+        ]
+      },
+      {
+        "line": 15,
+        "name": "Viewing AboutUs Module",
+        "description": "",
+        "id": "drop-down-module-options;viewing-aboutus-module;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "user is on the landing page",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "user clicks on AboutUs",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "user should able to see \"Mission and Vision\"",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@about"
           }
         ]
       }
     ],
-    "name": "navigate module options",
+    "name": "Drop Down module options",
     "description": "",
-    "id": "navigate-module-options",
+    "id": "drop-down-module-options",
     "keyword": "Feature",
-    "uri": "src/test/resources/features/navigation/Navigation.feature",
+    "uri": "src/test/resources/features/about/AboutUsDpDn.feature",
     "tags": [
       {
-        "name": "@navigation",
+        "name": "@about",
         "type": "Tag",
         "location": {
           "line": 1,
